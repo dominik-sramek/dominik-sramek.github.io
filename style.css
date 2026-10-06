@@ -16,13 +16,54 @@
     --card-border: rgba(255, 255, 255, 0.08);
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--bg-dark);
+    color-scheme: dark;
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-main);
-    min-height: 100vh;
     padding-top: 80px; 
-    overflow-x: hidden;
     position: relative;
+    width: 100%;
+}
+
+.site-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b; 
+    border-radius: 6px;
+    border: 3px solid var(--bg-dark);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #334155; 
 }
 
 /* Abstract Background Shapes */
@@ -30,9 +71,10 @@ body {
     position: absolute;
     border-radius: 50%;
     filter: blur(120px);
-    z-index: -1;
-    opacity: 0.4;
+    z-index: 0;
+    opacity: 0.5;
     animation: pulse 12s infinite alternate ease-in-out;
+    pointer-events: none;
 }
 
 .shape-1 {
@@ -170,6 +212,10 @@ body {
     max-width: 1100px;
     margin: 20px auto;
     padding: 20px;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 /* Typography & Highlights */
@@ -209,6 +255,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Buttons */
@@ -466,12 +513,19 @@ p {
         font-size: 13px;
     }
     .nav-links li {
-        margin-left: 15px;
+        margin-left: 10px;
     }
     .navbar {
-        padding: 0 5%;
+        padding: 0 15px;
+    }
+    .navbar .logo {
+        font-size: 18px;
     }
     .hero-banner-content h1 {
-        font-size: 42px;
+        font-size: 34px;
+        word-wrap: break-word;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
     }
 }
