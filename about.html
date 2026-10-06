@@ -8,41 +8,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body><div class=site-wrapper>
+<body data-page="about"><div class=site-wrapper>
     <div class="bg-shape shape-1"></div>
     <div class="bg-shape shape-2"></div>
 
     <nav class="navbar">
         <div class="logo">Dominik Šrámek<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-actions">
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <button type="button" class="lang-toggle" aria-label="Switch to Czech">
+                <span class="flag">🇬🇧</span>
+                <span class="lang-label">UK</span>
+            </button>
+        </div>
     </nav>
     
     <main class="content">
         <section class="about-section slide-up">
-            <h2>About <span class="highlight">Me</span></h2>
-            <p class="about-intro">I'm someone who loves the intersection of hardware, software, and entertainment. Here are the core things that drive my passion:</p>
+            <h2 data-i18n="about.heading">About <span class="highlight">Me</span></h2>
+            <p class="about-intro" data-i18n="about.intro">I'm someone who loves the intersection of hardware, software, and entertainment. Here are the core things that drive my passion:</p>
             <div class="cards-container">
                 <div class="card card-3d">
                     <div class="card-icon">🖨️</div>
-                    <h3>3D Printing</h3>
-                    <p>Fascinated by rapid prototyping. I love taking a digital concept and bringing it to life in the physical world.</p>
+                    <h3 data-i18n="about.card1.title">3D Printing</h3>
+                    <p data-i18n="about.card1.text">Fascinated by rapid prototyping. I love taking a digital concept and bringing it to life in the physical world.</p>
                 </div>
                 <div class="card card-3d">
                     <div class="card-icon">🎮</div>
-                    <h3>PC Gaming</h3>
-                    <p>When I'm not creating, you can find me exploring immersive virtual worlds, enjoying stories, and competitive gaming.</p>
+                    <h3 data-i18n="about.card2.title">PC Gaming</h3>
+                    <p data-i18n="about.card2.text">When I'm not creating, you can find me exploring immersive virtual worlds, enjoying stories, and competitive gaming.</p>
                 </div>
                 <div class="card card-3d">
                     <div class="card-icon">💻</div>
-                    <h3>Programming</h3>
-                    <p>I love writing code, solving complex logical problems, and building beautiful software solutions that make an impact.</p>
+                    <h3 data-i18n="about.card3.title">Programming</h3>
+                    <p data-i18n="about.card3.text">I love writing code, solving complex logical problems, and building beautiful software solutions that make an impact.</p>
                 </div>
             </div>
         </section>
     </main>
+    <script src="lang.js"></script>
 </div></body>
 </html>

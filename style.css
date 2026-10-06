@@ -127,9 +127,16 @@ body {
     color: var(--accent-1);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-links li {
@@ -144,6 +151,38 @@ body {
     transition: color 0.3s ease;
     padding: 8px 0;
     position: relative;
+}
+
+.lang-toggle {
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(148, 163, 184, 0.09);
+    color: var(--text-main);
+    border-radius: 999px;
+    padding: 6px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    min-width: 50px;
+    min-height: 38px;
+}
+
+.lang-toggle:hover {
+    transform: translateY(-1px);
+    border-color: rgba(96, 165, 250, 0.7);
+    background: rgba(96, 165, 250, 0.12);
+}
+
+.lang-toggle .flag {
+    display: block;
+    width: 36px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.14);
+    background: #fff;
 }
 
 .nav-links a::after {
