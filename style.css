@@ -228,6 +228,7 @@ body {
 h2 {
     font-size: 36px;
     font-weight: 600;
+    margin-top: 0;
     margin-bottom: 25px;
     color: #cbd5e1;
 }
@@ -529,11 +530,11 @@ p {
         grid-template-columns: 1fr;
     }
     .content {
-        margin: 10px auto;
-        padding: 10px 15px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
     .about-section, .contact-section {
-        padding-top: 10px;
+        padding-top: 0;
     }
     .contact-section p, .about-intro {
         margin-bottom: 30px;
