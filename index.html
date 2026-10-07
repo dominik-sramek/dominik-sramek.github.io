@@ -8,51 +8,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body><div class=site-wrapper>
+<body data-page="home"><div class=site-wrapper>
     <div class="bg-shape shape-1"></div>
     <div class="bg-shape shape-2"></div>
 
     <nav class="navbar">
         <div class="logo">Dominik Šrámek<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-actions">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <button type="button" class="lang-toggle" aria-label="Switch to Czech">
+                <span class="flag">🇬🇧</span>
+                <span class="lang-label">UK</span>
+            </button>
+        </div>
     </nav>
     
     <!-- Hero Background Banner -->
     <header class="hero-banner fade-in">
         <div class="hero-banner-content">
-            <p class="greeting">Hello, world! I am</p>
-            <h1><span class="highlight">Dominik Šrámek</span></h1>
-            <h2>Creator, Maker & Developer</h2>
+            <p class="greeting" data-i18n="hero.greeting">Hello, world! I am</p>
+            <h1><span class="highlight" data-i18n="hero.name">Dominik Šrámek</span></h1>
+            <h2 data-i18n="hero.title">Creator, Maker & Developer</h2>
         </div>
     </header>
     
     <main class="content">
         <section class="intro-section slide-up">
-            <p>Welcome to my personal portfolio. I'm passionate about technology, creating things from scratch, and exploring the endless possibilities of the digital and physical world.</p>
+            <p data-i18n="home.intro">Welcome to my personal portfolio. I'm passionate about technology, creating things from scratch, and exploring the endless possibilities of the digital and physical world.</p>
             <div class="hero-buttons">
-                <a href="about.html" class="btn">Discover more</a>
-                <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                <a href="about.html" class="btn" data-i18n="home.discover">Discover more</a>
+                <a href="contact.html" class="btn btn-outline" data-i18n="home.contact">Get in Touch</a>
             </div>
         </section>
         
         <section class="quick-highlights slide-up" style="animation-delay: 0.3s;">
             <div class="highlight-box">
-                <h3>💻 Code</h3>
-                <p>Building modern web apps</p>
+                <h3 data-i18n="home.code.title">💻 Code</h3>
+                <p data-i18n="home.code.text">Building modern web apps</p>
             </div>
             <div class="highlight-box">
-                <h3>🖨️ 3D Print</h3>
-                <p>Prototyping physical ideas</p>
+                <h3 data-i18n="home.print.title">🖨️ 3D Print</h3>
+                <p data-i18n="home.print.text">Prototyping physical ideas</p>
             </div>
             <div class="highlight-box">
-                <h3>🎮 Gaming</h3>
-                <p>Exploring virtual worlds</p>
+                <h3 data-i18n="home.gaming.title">🎮 Gaming</h3>
+                <p data-i18n="home.gaming.text">Exploring virtual worlds</p>
             </div>
         </section>
     </main>
+    <script src="lang.js"></script>
 </div></body>
 </html>
