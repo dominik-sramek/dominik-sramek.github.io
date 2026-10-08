@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Portfolio of Dominik Šrámek - Creator, Maker & Developer">
     <meta name="google" content="notranslate">
     <title>Dominik Šrámek - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,9 +19,9 @@
         <div class="logo">Dominik Šrámek<span>.</span></div>
         <div class="nav-actions">
             <ul class="nav-links">
-                <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
-                <li><a href="about.html" data-i18n="nav.about">About</a></li>
-                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <button type="button" class="lang-toggle" aria-label="Switch to Czech">
                 <span class="flag">🇬🇧</span>
@@ -28,7 +31,7 @@
     </nav>
     
     <!-- Hero Background Banner -->
-    <header class="hero-banner fade-in">
+    <header id="home" class="hero-banner fade-in">
         <div class="hero-banner-content">
             <p class="greeting" data-i18n="hero.greeting">Hello, world! I am</p>
             <h1><span class="highlight" data-i18n="hero.name">Dominik Šrámek</span></h1>
@@ -37,29 +40,93 @@
     </header>
     
     <main class="content">
-        <section class="intro-section slide-up">
-            <p data-i18n="home.intro">Welcome to my personal portfolio. I'm passionate about technology, creating things from scratch, and exploring the endless possibilities of the digital and physical world.</p>
-            <div class="hero-buttons">
-                <a href="about.html" class="btn" data-i18n="home.discover">Discover more</a>
-                <a href="contact.html" class="btn btn-outline" data-i18n="home.contact">Get in Touch</a>
+        <!-- About Section (Row 1) -->
+        <section id="about" class="bg-section gradient-right slide-up" style="background-image: url('about-bg.png');">
+            <div class="content-overlay align-right">
+                <div class="text-box edge-box right-box">
+                    <h2 data-i18n="about.heading">About <span class="highlight">Me</span></h2>
+                    <p data-i18n="about.main_text">Hi, I'm Dominik Šrámek. I'm passionate about technology and I love building things that have real-world use. Whether I'm currently writing code, printing on a 3D printer, or playing with hardware, I enjoy the process of turning an idea into something functional. On this portfolio website, I share the projects I'm currently working on and enjoying.</p>
+                    
+                    <div class="quick-highlights activities-list">
+                        <div class="highlight-box activity-card">
+                            <h3><span class="emoji">💻</span><span data-i18n="about.prog.title">Programming</span></h3>
+                            <p data-i18n="about.prog.text">I focus on developing modern web applications and solving logical problems. I enjoy writing clean code and building things from the ground up.</p>
+                        </div>
+                        <div class="highlight-box activity-card">
+                            <h3><span class="emoji">🖨️</span><span data-i18n="about.3d.title">3D Printing</span></h3>
+                            <p data-i18n="about.3d.text">I design, prototype, and print physical objects. 3D printing is a great way for me to turn digital ideas into reality.</p>
+                        </div>
+                        <div class="highlight-box activity-card">
+                            <h3><span class="emoji">🎮</span><span data-i18n="about.game.title">PC Gaming</span></h3>
+                            <p data-i18n="about.game.text">When I'm not working, I like to immerse myself in story-driven or competitive games. It's a great way for me to relax and at the same time observe game design.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <section class="quick-highlights slide-up" style="animation-delay: 0.3s;">
-            <div class="highlight-box">
-                <h3 data-i18n="home.code.title">💻 Code</h3>
-                <p data-i18n="home.code.text">Building modern web apps</p>
-            </div>
-            <div class="highlight-box">
-                <h3 data-i18n="home.print.title">🖨️ 3D Print</h3>
-                <p data-i18n="home.print.text">Prototyping physical ideas</p>
-            </div>
-            <div class="highlight-box">
-                <h3 data-i18n="home.gaming.title">🎮 Gaming</h3>
-                <p data-i18n="home.gaming.text">Exploring virtual worlds</p>
+
+        <!-- Contact Section (Row 2) -->
+        <section id="contact" class="bg-section gradient-left slide-up" style="background-image: url('contact-bg.png');">
+            <div class="content-overlay align-left">
+                <div class="text-box edge-box left-box">
+                    <h2 data-i18n="contact.heading">Get in <span class="highlight">Touch</span></h2>
+                    <p data-i18n="contact.intro">Feel free to reach out to me for collaborations, questions, or just a friendly chat! I'm always open to discussing new projects and ideas.</p>
+                    
+                    <div class="contact-grid contact-list">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=domin35012@gmail.com" target="_blank" class="contact-card list-card">
+                            <div class="icon-wrapper email-icon">✉️</div>
+                            <div class="contact-info">
+                                <h4 data-i18n="contact.email">Email</h4>
+                                <span>domin35012@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/domin350" target="_blank" class="contact-card list-card">
+                            <div class="icon-wrapper ig-icon">📸</div>
+                            <div class="contact-info">
+                                <h4 data-i18n="contact.instagram">Instagram</h4>
+                                <span>@domin350</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/dominik-sramek" target="_blank" class="contact-card list-card">
+                            <div class="icon-wrapper github-icon">💻</div>
+                            <div class="contact-info">
+                                <h4 data-i18n="contact.github">GitHub</h4>
+                                <span>dominik-sramek</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
     <script src="lang.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("header[id], section[id]");
+            const navLinks = document.querySelectorAll(".nav-links a");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+                sections.forEach((section) => {
+                    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+                    if (window.scrollY >= (sectionTop - 150)) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                if (window.scrollY < 100) {
+                    current = "home";
+                }
+
+                navLinks.forEach((a) => {
+                    a.classList.remove("active");
+                    if (a.getAttribute("href") === "#" + current) {
+                        a.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
 </div></body>
 </html>

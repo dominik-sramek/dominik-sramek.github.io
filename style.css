@@ -26,6 +26,8 @@ html, body {
 html {
     background-color: var(--bg-dark);
     color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -377,65 +379,6 @@ p {
     font-size: 18px;
 }
 
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    padding: 50px 40px;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 4px;
-    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease;
-}
-
-.card:hover::before {
-    transform: scaleX(1);
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    background: rgba(30, 41, 59, 0.7);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    border-color: rgba(255,255,255,0.15);
-}
-
-.card-icon {
-    font-size: 45px;
-    margin-bottom: 25px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.card:hover .card-icon {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: var(--text-main);
-}
-
-.card p {
-    font-size: 16px;
-    margin-bottom: 0;
-}
 
 /* Contact Section */
 .contact-section {
@@ -579,3 +522,115 @@ p {
         margin-bottom: 30px;
     }
 }
+
+/* Background Section Layout */
+.bg-section {
+    position: relative;
+    width: 100vw;
+    margin: 60px calc(50% - 50vw);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.bg-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+}
+.bg-section.gradient-right::before {
+    background: linear-gradient(90deg, rgba(9, 9, 11, 0.2) 0%, rgba(9, 9, 11, 0.9) 100%);
+}
+.bg-section.gradient-left::before {
+    background: linear-gradient(270deg, rgba(9, 9, 11, 0.2) 0%, rgba(9, 9, 11, 0.9) 100%);
+}
+.bg-section .content-overlay {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+.bg-section .content-overlay.align-right {
+    justify-content: flex-end;
+    padding: 60px 0 60px 20px;
+}
+.bg-section .content-overlay.align-left {
+    justify-content: flex-start;
+    padding: 60px 20px 60px 0;
+}
+.bg-section .edge-box {
+    max-width: 650px;
+    width: 100%;
+}
+.bg-section .right-box {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.bg-section .left-box {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+@media (max-width: 900px) {
+    .bg-section .content-overlay.align-right,
+    .bg-section .content-overlay.align-left {
+        justify-content: center;
+        padding: 60px 20px;
+    }
+    .bg-section .right-box,
+    .bg-section .left-box {
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+    }
+}
+.text-box {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.activities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.activity-card {
+    padding: 20px;
+    margin: 0;
+    background: rgba(30, 41, 59, 0.6);
+}
+
+.activity-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.activity-card .emoji {
+    margin-right: 10px;
+}
+
+.activity-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-list {
+    justify-content: flex-start;
+}
+
+.list-card {
+    width: 100%;
+}
+
