@@ -18,7 +18,9 @@ const translations = {
     "contact.intro": "Feel free to reach out to me for collaborations, questions, or just a friendly chat! I'm always open to discussing new projects and ideas.",
     "contact.email": "Email",
     "contact.instagram": "Instagram",
-    "contact.github": "GitHub"
+    "contact.github": "GitHub",
+    "footer.rights": "All rights reserved.",
+    "footer.validator": "W3C HTML Validator"
   },
   cs: {
     "nav.home": "Domů",
@@ -39,7 +41,9 @@ const translations = {
     "contact.intro": "Neváhejte mě kontaktovat pro spolupráci, dotazy nebo jen přátelské povídání! Vždy jsem otevřený diskusi o nových projektech a nápadech.",
     "contact.email": "E-mail",
     "contact.instagram": "Instagram",
-    "contact.github": "GitHub"
+    "contact.github": "GitHub",
+    "footer.rights": "Všechna práva vyhrazena.",
+    "footer.validator": "W3C HTML Validátor"
   }
 };
 
