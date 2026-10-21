@@ -2,6 +2,7 @@ const translations = {
   en: {
     "nav.home": "Home",
     "nav.about": "About",
+    "nav.projects": "Projects",
     "nav.contact": "Contact",
     "hero.greeting": "Hello, world! I am",
     "hero.name": "Dominik Šrámek",
@@ -14,6 +15,11 @@ const translations = {
     "about.3d.text": "I design, prototype, and print physical objects. 3D printing is a great way for me to turn digital ideas into reality.",
     "about.game.title": "PC Gaming",
     "about.game.text": "When I'm not working, I like to immerse myself in story-driven or competitive games. It's a great way for me to relax and at the same time observe game design.",
+    "projects.heading": "My <span class=\"highlight\">Projects</span>",
+    "projects.this_web.title": "This Website:",
+    "projects.this_web.desc": "I created this website as my digital business card and a place where I can showcase my work in one spot. I built the entire website from scratch with light use of AI. During development, I focused on a modern, minimalistic design, intuitive navigation, and speed. The website is fully responsive, so it seamlessly adapts to both large monitors and mobile phone screens. It also serves as a space where I test new web technologies and techniques in practice.",
+    "projects.tag.responsive": "Responsive",
+    "projects.view_code": "GitHub Repository",
     "contact.heading": "Get in <span class=\"highlight\">Touch</span>",
     "contact.intro": "Feel free to reach out to me for collaborations, questions, or just a friendly chat! I'm always open to discussing new projects and ideas.",
     "contact.email": "Email",
@@ -25,6 +31,7 @@ const translations = {
   cs: {
     "nav.home": "Domů",
     "nav.about": "O mně",
+    "nav.projects": "Projekty",
     "nav.contact": "Kontakt",
     "hero.greeting": "Ahoj světe! Jsem",
     "hero.name": "Dominik Šrámek",
@@ -37,6 +44,11 @@ const translations = {
     "about.3d.text": "Navrhuju, prototypuju a tisknu fyzické objekty. 3D tisk je pro mě skvělá možnost, jak převést digitální nápady do reality.",
     "about.game.title": "PC hry",
     "about.game.text": "Když zrovna nepracuju, rád se ponořím do příběhových nebo kompetitivních her. Je to pro mě fajn způsob, jak si odpočinout a zároveň sledovat herní design.",
+    "projects.heading": "Moje <span class=\"highlight\">projekty</span>",
+    "projects.this_web.title": "Tento web:",
+    "projects.this_web.desc": "Tuto stránku jsem vytvořil jako svou takovou moji vizitku a místo, kde můžu na jednom místě prezentovat svou práci. Celý web jsem postavil kompletně od základů s lehkým použitím AI. Při tvorbě jsem se zaměřil na moderní, minimalistický vzhled, přehlednou navigaci a rychlost. Web je plně responzivní, takže se plynule přizpůsobí jak velkému monitoru, tak displeji telefonu. Slouží mi zároveň jako prostor, kde si v praxi zkouším nové webové technologie a postupy.",
+    "projects.tag.responsive": "Responzivní",
+    "projects.view_code": "GitHub repozitář",
     "contact.heading": "Napište <span class=\"highlight\">mi</span>",
     "contact.intro": "Neváhejte mě kontaktovat pro spolupráci, dotazy nebo jen přátelské povídání! Vždy jsem otevřený diskusi o nových projektech a nápadech.",
     "contact.email": "E-mail",
@@ -55,6 +67,10 @@ const pageTitles = {
   about: {
     en: "About Me - Dominik Šrámek",
     cs: "O mně - Dominik Šrámek"
+  },
+  projects: {
+    en: "Projects - Dominik Šrámek",
+    cs: "Projekty - Dominik Šrámek"
   },
   contact: {
     en: "Contact - Dominik Šrámek",

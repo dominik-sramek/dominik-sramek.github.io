@@ -21,6 +21,7 @@
             <ul class="nav-links">
                 <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
                 <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <button type="button" class="lang-toggle" aria-label="Switch to Czech">
@@ -65,7 +66,42 @@
             </div>
         </section>
 
-        <!-- Contact Section (Row 2) -->
+        <!-- Projects Section (Row 2) -->
+        <section id="projects" class="projects-section slide-up">
+            <div class="projects-container">
+                <div class="section-title text-center">
+                    <h2 data-i18n="projects.heading">My <span class="highlight">Projects</span></h2>
+                </div>
+
+                <div class="project-card text-box">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.this_web.title">This Website:</h3>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-img-wrapper">
+                            <img src="this-website.png" alt="This Website Preview" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-description" data-i18n="projects.this_web.desc">I created this website as my digital business card and a place where I can showcase my work in one spot. I built the entire website from scratch with light use of AI. During development, I focused on a modern, minimalistic design, intuitive navigation, and speed. The website is fully responsive, so it seamlessly adapts to both large monitors and mobile phone screens. It also serves as a space where I test new web technologies and techniques in practice.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag" data-i18n="projects.tag.responsive">Responsive</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/dominik-sramek/dominik-sramek.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
+                                    <span class="btn-icon">💻</span>
+                                    <span data-i18n="projects.view_code">GitHub Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Row 3) -->
         <section id="contact" class="bg-section gradient-left slide-up" style="background-image: url('contact-bg.png');">
             <div class="content-overlay align-left">
                 <div class="text-box edge-box left-box">
